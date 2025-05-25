@@ -10,12 +10,20 @@ if (userName)  {
 
 //prompt asking user age
 var userAge = prompt("How old are you?");
-var userAge = parseInt(userAge);
+console.log(parseInt(userAge));
 
 //did user have a birthday already this year
-var hadBirthdayThisYear = prompt("Have you already had a birthday this year?");
-if (confirm(hadBirthdayThisYear)) {
-   console.log("User clicked yes");
+window.confirm('Did you already have a birthday this year?');
+if (confirm("Did you already haev a birthday this year?") == true){
+    alert(You were born in (currentYear - userAge))
 } else {
-    console.log("User clicked no");
+    alert(You were born in (currentYear - userAge -1))
 }
+
+function subtractCurrentYearFromAge (age, yearsToSubtract) {
+    const currentYear = new Date().getFullYear();
+    const newYear = currentYear - userAge;
+    return newYear - age;
+}
+
+
