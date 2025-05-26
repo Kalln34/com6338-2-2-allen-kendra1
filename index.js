@@ -13,17 +13,23 @@ var userAge = prompt("How old are you?");
 console.log(parseInt(userAge));
 
 //did user have a birthday already this year
-window.confirm('Did you already have a birthday this year?');
-if (confirm("Did you already haev a birthday this year?") == true){
-    alert(You were born in (currentYear - userAge))
+if (window.confirm("Did you already have a birthday this year?")) {
+    alert("If you are age years old, you were born in birthYear.");
 } else {
-    alert(You were born in (currentYear - userAge -1))
+    alert("You were born in: () ");
 }
 
-function subtractCurrentYearFromAge (age, yearsToSubtract) {
+
+//calulating birth year formulas
+function getBirthYear(age) {
     const currentYear = new Date().getFullYear();
-    const newYear = currentYear - userAge;
-    return newYear - age;
+    const birthYear = currentYear - userAge;
+    return birthYear;
 }
 
+const age = userAge;
+const birthYear = currentYear - userAge;
+console.log('If you are ${age} years old, you were born in ${birthYear}.');
 
+var currentDate = new Date();
+var newDate = new Date().getFullYear() - {userAge}
