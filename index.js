@@ -33,7 +33,6 @@ var currentDate = new Date();
 var newDate = new Date().getFullYear() - {userAge}
 
 
-var age = userAge
-var birthYear = new Date().getFullYear - userAge
+
 
 
