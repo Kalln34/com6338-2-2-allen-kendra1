@@ -1,6 +1,4 @@
-function greet(hello) {
-    console.log("Hello" +"!");
-}
+function greet() {}
 
 //prompt function asking user's name
 var userName = prompt("What is your name?");
@@ -33,3 +31,9 @@ console.log('If you are ${age} years old, you were born in ${birthYear}.');
 
 var currentDate = new Date();
 var newDate = new Date().getFullYear() - {userAge}
+
+
+var age = userAge
+var birthYear = new Date().getFullYear - userAge
+
+
